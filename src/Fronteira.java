@@ -4,7 +4,8 @@ public class Fronteira {
 	public static void main(String[] args) {
 		Cliente c1 = new Cliente ();
 		c1.nome = "Ian";
-		c1.fone = 111;
+		c1.fones[0].ddd= 11;
+		c1.fones[0].numero = 999;
 		c1.id = 1;
 		
 //		System.out.println("Nome " + c1.nome + "Total Cliente: "+  Cliente.contador);
@@ -25,11 +26,11 @@ public class Fronteira {
 		p1.numero = 33;
 		p1.valor = 100;
 		p1.id_cliente = c1;
-		System.out.println("Pedido " + p1.numero + " cliente " + p1.id_cliente.nome);
+		System.out.println("Pedido " + p1.getNumero() + " cliente " + p1.id_cliente.nome);
 		
-		c1.id_pedido = p1;
+		c1.pedido = p1;
 		
-		System.out.println("Cliente " + c1.nome + " pedido: " + c1.id_pedido.valor);
+		System.out.println("Cliente " + c1.nome + " pedido: " + c1.pedido.getValor() + " numero pedido " + c1.pedido.getNumero());
 		
 		
 //		

@@ -2,8 +2,11 @@
 public class Cliente {
 	int id;
 	String nome;
-	int fone;
-	Pedido id_pedido;
+	Fone [] fones = new Fone [5];
+	
+	
+	//Pedido id_pedido;
+	Modelo pedido;
 	
 	static int contador = 0;
 
@@ -11,9 +14,7 @@ public class Cliente {
 		super();
 		contador++;
 	}
-//	public static int cont () {
-//		contador ++;
-//	}
+
 	
 		
 }
